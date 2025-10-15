@@ -1,82 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-    margin: 0;
-    padding: 0; ;
-}
-body{
-    background: #222;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.crud{
-    width: 80%;
-    margin: auto;
-}
-.head{
-    text-align: center;
-    text-transform: uppercase;
-    margin: 10px 0;
-}
-input{
-    width: 100%;
-    height: 30px;
-    outline: none;
-    border: none;
-    background: #111;
-    margin: 4px 0;
-    border-radius: 4px;
-    padding: 4px;
-    color: #fff;
-}
-input:focus{
-    background: #000;
-    transform: scale(1.1);
-}
-.price input{
-    width: 20%
-    
-}
-#total{
-    background: #a00d02;
-    padding: 5px 2px;
-    border-radius: 4px;
-}
-#total::before{
-    content: "total: ";
-}
-button{
-    width: 100%;
-    height: 30px;
-    border: none;
-    cursor: pointer;
-    background: #310044;
-    color: #fff;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-button:hover{
-    background: #51025f;
-    letter-spacing: 1px;
-}
-.btnsearch{
-    display: flex;
-    justify-content: space-between;
 
-}
-.btnsearch button{
-    width: 45%;
-}
-#deleteAll{
-    margin: 20px 0;
-}
-table{
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
-}
-table th{
-    text-transform: uppercase;
+     font-family: "Poppins", sans-serif;
+     margin: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+    }
+    header{
+        background-color: #f0f0f0;
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 200px;
+    }
+    .logo{
+        text-decoration: none;
+        color: blue;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.8em;
+    }
+    .navigation a{
+        color: blue;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1em;
+        padding-left: 30px;
+    }
+    .navigation a:hover{
+        color: #601cfc;
+    }
+    section{
+        padding: 100px 200px;
+    }
+    .main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+       background: url(c:/Users/moham/Downloads/img.png.png);
+      background-size: cover;
+      background-position: center; 
+      background-attachment: fixed;
+    } 
+    .main h2{
+        color: red;
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+    .main h2 span{
+        display: inline-block;
+        margin-top: 10px;
+        color:yellow;
+        font-size: 3em;
+        font-weight: 600;
 
-}
-th,td{
-    padding: 10px;
-}
+    }
+    .main h3{
+        color: rgb(247, 0, 255);
+        font-size: 2em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .main-btn{
+        color: #f0f0f0;
+        background-color: blue;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 600;
+        display:inline-block;
+        padding: 0.9375em 2.1875em;
+        letter-spacing: 1px;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        transition: 0.7s ease;
+
+
+    }
+    .main-btn:hover{
+        background-color: blue;
+        transform: scale(1.1);
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        color: blue;
+        font-size: 2.2em;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card {
+        background-color: #f0f0f0;
+        width: 21.25em;
+        box-shadow: 0 5px 25px rgba(1 1 1/20%);
+        border-radius: 10px;
+        padding: 25px;
+        margin: 15px;
+        transition: 0.7em ease;
+    }
+    .card:hover{
+        transform: scale(1.1);
+    }
+    .icon {
+        color: blue;
+        font-size: 8em;
+        text-align: center;
+    }
+    .info{
+        text-align: center;
+    }
+    .info h3{
+        color:blue;
+        font-size: 1.2em;
+        font-weight: 700;
+        margin: 10px;
+
+    }
+    .projects{
+        background-color: #000016;
+
+    }
+    .projects.content{
+        margin-top: 30px;
+    }
+    .projects-card{
+        background-color: #fff;
+        border: 1px solid #fff;
+        min-height: 14em;
+        width: 23em;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 20px;
+        transition: 0.7s ease;
+        padding: 10px;
+    }
+      .projects-card :hover{
+        transform: scale(1.1);
+
+      }
+      .projects-card:hover .projects-image{
+        opacity: 0.9;
+      }
+      .projects-image img{
+        width: 100%;
+      } 
+      .projects-info{
+        padding: 1em;
+      }
+      .projects-category{
+        font-size: 0.8em;
+        color: aqua;
+      }
+      .projects-title{
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 10px;
+      } 
+      .more-details{
+        text-decoration:none ;
+        color: blue;
+        
+      }
+      .more-details:hover{
+        color: #601cfc;
+        
+      }
+      .content.icon{
+        font-size: 4.5em;
+        
+      }
+      .content.info h3{
+        color: #000;
+      }
+      .content.info p{
+        font-size: 1.5em;
+        transform: capitalize;
+      }
